@@ -16,7 +16,9 @@ public class ExperimentDao {
     public static ArrayList<Experiment> getExperimenten() {
 		ArrayList<Experiment> resultaat = new ArrayList<Experiment>();
 		try {
-			ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT * from tblExperimenten");
+			ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT e.Id, e.Nummer, e.Actief, z.Nummer, z.Id from tblExperimenten e inner join tblZones z on e.Zone_Id = z.Id");
+                    
+			//ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT e.Id, e.Nummer, e.Actief, e.Zone_Id from tblExperimenten e");
 			if (mijnResultset != null) {
 				while (mijnResultset.next()) {
 					Experiment huidigExperiment = converteerHuidigeRijNaarObject(mijnResultset);
@@ -81,6 +83,6 @@ public class ExperimentDao {
 	}
 */
 	private static Experiment converteerHuidigeRijNaarObject(ResultSet mijnResultset) throws SQLException {
-		return new Experiment(mijnResultset.getInt("id"), mijnResultset.getInt("nummer"), mijnResultset.getInt("actief"), mijnResultset.getInt("zone"));
+		return new Experiment(mijnResultset.getInt("id"), mijnResultset.getInt("nummer"), mijnResultset.getInt("actief"), mijnResultset.getInt("nummer"));
 	}
 }

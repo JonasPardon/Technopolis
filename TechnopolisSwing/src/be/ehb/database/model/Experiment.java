@@ -13,8 +13,11 @@ public class Experiment {
     private int id;
     private int nummer;
     private int actief;
-    private int zone;  
-
+    private int zone;
+    public String[] teksten;
+    
+    
+    
     public void setId(int Id) {
         this.id = Id;
     }
@@ -30,7 +33,6 @@ public class Experiment {
     public void setZone(int zone) {
         this.zone = zone;
     }
-
 
     public int getId() {
         return id;

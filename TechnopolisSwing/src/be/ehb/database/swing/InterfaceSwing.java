@@ -89,7 +89,13 @@ public class InterfaceSwing extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         ArrayList<Experiment> resultaat = ExperimentDao.getExperimenten();
-        txTextbox.setText("Aantal resultaten uit de databank: " + Integer.toString(resultaat.size()));
+        int aantal = resultaat.size();
+        txTextbox.setText("Aantal resultaten uit de databank: " + Integer.toString(aantal));
+        for(int i = 0; i < aantal; i++)
+        {
+            Experiment exp = resultaat.get(i);
+            txTextbox.append("\n" + exp.getId() + ": " + exp.getNummer() + " " + exp.getZone() + " " + exp.getActief());
+        }
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**

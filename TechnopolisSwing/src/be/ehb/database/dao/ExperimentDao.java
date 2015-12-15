@@ -34,7 +34,7 @@ public class ExperimentDao {
 	public static Experiment getExperimentById(int id) {
 		Experiment resultaat = null;
 		try {
-			ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT * from tblExperimenten where ExperimentId = ?", new Object[] { id });
+			ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT * from tblExperimenten where Id = ?", new Object[] { id });
 			if (mijnResultset != null) {
 				mijnResultset.first();
 				resultaat = converteerHuidigeRijNaarObject(mijnResultset);
@@ -46,18 +46,18 @@ public class ExperimentDao {
 
 		return resultaat;
 	}
-/*
+        
 	public static int voegExperimentToe(Experiment nieuweExperiment) {
 		int aantalAangepasteRijen = 0;
 		try {
-			aantalAangepasteRijen = Database.voerSqlUitEnHaalAantalAangepasteRijenOp("INSERT INTO Experiment (Voornaam, Achternaam, Adres) VALUES (?,?,?)", new Object[] { nieuweExperiment.getVoornaam(), nieuweExperiment.getAchternaam(), nieuweExperiment.getAdres() });
+			aantalAangepasteRijen = Database.voerSqlUitEnHaalAantalAangepasteRijenOp("INSERT INTO tblExperimenten (Nummer, Actief, Zone_ID) VALUES (?,?,?)", new Object[] { nieuweExperiment.getNummer(), nieuweExperiment.getActief(), nieuweExperiment.getZone() });
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 			// Foutafhandeling naar keuze
 		}
 		return aantalAangepasteRijen;
 	}
-
+/*
 	public static int updateExperiment(Experiment nieuweExperiment) {
 		int aantalAangepasteRijen = 0;
 		try {

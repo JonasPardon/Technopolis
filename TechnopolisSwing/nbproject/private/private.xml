@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ruben_000/Documents/NetBeansProjects/TechnopolisSwing/src/be/ehb/database/dao/Database.java</file>
-            <file>file:/C:/Users/ruben_000/Documents/NetBeansProjects/TechnopolisSwing/src/be/ehb/database/model/Experiment.java</file>
-            <file>file:/C:/Users/ruben_000/Documents/NetBeansProjects/TechnopolisSwing/src/be/ehb/database/dao/ExperimentDao.java</file>
-            <file>file:/C:/Users/ruben_000/Documents/NetBeansProjects/TechnopolisSwing/src/be/ehb/database/swing/InterfaceSwing.java</file>
+            <file>file:/C:/Users/Jonas/Documents/GitHub/Technopolis/Technopolis/TechnopolisSwing/src/be/ehb/database/swing/InterfaceSwing.java</file>
+            <file>file:/C:/Users/Jonas/Documents/GitHub/Technopolis/Technopolis/TechnopolisSwing/src/be/ehb/database/dao/ExperimentDao.java</file>
         </group>
     </open-files>
 </project-private>

@@ -5,7 +5,6 @@
  */
 package be.ehb.database.dao;
 import java.sql.*;
-import java.util.ArrayList;
 
 import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.RowSetProvider;
@@ -53,8 +52,8 @@ public class Database {
 			ResultSet mijnResultset = mijnPreparedStatement.executeQuery();
 			mijnCachedRowSet = RowSetProvider.newFactory().createCachedRowSet();
 			mijnCachedRowSet.populate(mijnResultset);
-
-		} catch (SQLException ex) {
+		} 
+                catch (SQLException ex) {
 			ex.printStackTrace();
 			throw ex;
 		} finally {
@@ -87,5 +86,6 @@ public class Database {
 
 		return aantalAangepasteRijen;
 	}
+
 }
 

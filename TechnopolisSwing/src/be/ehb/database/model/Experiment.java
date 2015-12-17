@@ -14,9 +14,11 @@ public class Experiment {
     private int nummer;
     private int actief;
     private int zone;
-    public String[] teksten;
-    
-    
+    public String[][] teksten = new String[3][4];
+    //Rij 1 zijn de Nederlandse teksten
+    //Rij 2 zijn de Franse teksten
+    //Rij 3 zijn de Engelse teksten
+    //De teksten in volgorde: Naam, Instructies, Verklaring, Benodigdheden.
     
     public void setId(int Id) {
         this.id = Id;
@@ -55,6 +57,11 @@ public class Experiment {
         this.nummer = nummer;
         this.actief = actief;
         this.zone = zone;
+    }
+    
+    public Experiment() {
+        this.actief = 1;
+        this.zone = 0;
     }
     
     

@@ -17,9 +17,7 @@ public class ExperimentDao {
 		ArrayList<Experiment> resultaat = new ArrayList<Experiment>();
 		try {
 			ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT e.Id, e.Nummer, e.Actief, z.Nummer from tblExperimenten e inner join tblZones z on e.Zone_Id = z.Id");
-                    
-			//ResultSet mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT e.Id, e.Nummer, e.Actief, e.Zone_Id from tblExperimenten e");
-			if (mijnResultset != null) {
+      			if (mijnResultset != null) {
 				while (mijnResultset.next()) {
 					Experiment huidigExperiment = converteerHuidigeRijNaarObject(mijnResultset);
 					resultaat.add(huidigExperiment);
@@ -148,7 +146,7 @@ public class ExperimentDao {
         } 
     
     public static int getExperimentIdByData(int nummer, int zone_Id, int actief) {
-		int id = 88;
+		int id = -1;
 		try {
 			ResultSet mijnResultset;
                         mijnResultset = Database.voerSqlUitEnHaalResultaatOp("SELECT * FROM tblExperimenten WHERE Nummer = ? AND Zone_Id = ? AND Actief = ?", new Object[] { nummer, zone_Id, actief });

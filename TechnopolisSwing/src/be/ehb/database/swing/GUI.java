@@ -221,7 +221,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        btnOpslaanAls.setText("Opslaan als");
+        btnOpslaanAls.setText("Opslaan als nieuw Experiment");
         btnOpslaanAls.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnOpslaanAlsMouseClicked(evt);
@@ -320,10 +320,7 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel4.setText("Voeg foto toe:");
 
-        txtNummer.setText("555");
         txtNummer.setToolTipText("");
-
-        txtZoneNummer.setText("2");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -332,21 +329,18 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblPadFoto)
+                    .addComponent(lblPadVideo)
+                    .addComponent(chbThuisExperiment)
+                    .addComponent(chbActief)
                     .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnBrowseFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblPadFoto)
-                            .addComponent(lblPadVideo)
-                            .addComponent(chbThuisExperiment)
-                            .addComponent(chbActief)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnBrowseFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnBrowseVideo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(btnBrowseVideo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -391,20 +385,16 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel30.setText("* Naam:");
 
-        txtNaamNL.setText("naamNL");
-
         jLabel31.setText("* Instructies:");
 
         jLabel32.setText("* Verklaring:");
 
         txtVerklaringNL.setColumns(20);
         txtVerklaringNL.setRows(5);
-        txtVerklaringNL.setText("verNL");
         jScrollPane13.setViewportView(txtVerklaringNL);
 
         txtInstructiesNL.setColumns(20);
         txtInstructiesNL.setRows(5);
-        txtInstructiesNL.setText("insNL");
         txtInstructies6.setViewportView(txtInstructiesNL);
 
         jLabel33.setText("Benodigdheden:");
@@ -474,20 +464,16 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel34.setText("* Naam:");
 
-        txtNaamFR.setText("naamFR");
-
         jLabel35.setText("* Instructies:");
 
         jLabel36.setText("* Verklaring:");
 
         txtVerklaringFR.setColumns(20);
         txtVerklaringFR.setRows(5);
-        txtVerklaringFR.setText("vFR");
         jScrollPane15.setViewportView(txtVerklaringFR);
 
         txtInstructiesFR.setColumns(20);
         txtInstructiesFR.setRows(5);
-        txtInstructiesFR.setText("insFR");
         txtInstructies7.setViewportView(txtInstructiesFR);
 
         jLabel37.setText("Benodigdheden:");
@@ -571,20 +557,16 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel38.setText("* Naam:");
 
-        txtNaamEN.setText("naamEN");
-
         jLabel39.setText("* Instructies:");
 
         jLabel40.setText("* Verklaring:");
 
         txtVerklaringEN.setColumns(20);
         txtVerklaringEN.setRows(5);
-        txtVerklaringEN.setText("vEN");
         jScrollPane17.setViewportView(txtVerklaringEN);
 
         txtInstructiesEN.setColumns(20);
         txtInstructiesEN.setRows(5);
-        txtInstructiesEN.setText("insFR");
         txtInstructies8.setViewportView(txtInstructiesEN);
 
         jLabel41.setText("Benodigdheden:");

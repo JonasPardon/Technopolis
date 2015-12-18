@@ -151,7 +151,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnOpslaanAls">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Opslaan als"/>
+                    <Property name="text" type="java.lang.String" value="Opslaan als nieuw Experiment"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOpslaanAlsMouseClicked"/>
@@ -239,24 +239,19 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lblPadFoto" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPadVideo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="chbThuisExperiment" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="chbActief" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnBrowseFoto" min="-2" pref="85" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="lblPadFoto" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblPadVideo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="chbThuisExperiment" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="chbActief" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="btnBrowseFoto" min="-2" pref="85" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnBrowseVideo" min="-2" pref="85" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
+                                  <Component id="btnBrowseVideo" min="-2" pref="85" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -364,14 +359,10 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtNummer">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="555"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtZoneNummer">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="2"/>
-                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -465,9 +456,6 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txtNaamNL">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="naamNL"/>
-                      </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel31">
                       <Properties>
@@ -490,7 +478,6 @@
                           <Properties>
                             <Property name="columns" type="int" value="20"/>
                             <Property name="rows" type="int" value="5"/>
-                            <Property name="text" type="java.lang.String" value="verNL"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -506,7 +493,6 @@
                           <Properties>
                             <Property name="columns" type="int" value="20"/>
                             <Property name="rows" type="int" value="5"/>
-                            <Property name="text" type="java.lang.String" value="insNL"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -647,9 +633,6 @@
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtNaamFR">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="naamFR"/>
-                          </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel35">
                           <Properties>
@@ -672,7 +655,6 @@
                               <Properties>
                                 <Property name="columns" type="int" value="20"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="vFR"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -688,7 +670,6 @@
                               <Properties>
                                 <Property name="columns" type="int" value="20"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="insFR"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -839,9 +820,6 @@
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtNaamEN">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="naamEN"/>
-                          </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel39">
                           <Properties>
@@ -864,7 +842,6 @@
                               <Properties>
                                 <Property name="columns" type="int" value="20"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="vEN"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -880,7 +857,6 @@
                               <Properties>
                                 <Property name="columns" type="int" value="20"/>
                                 <Property name="rows" type="int" value="5"/>
-                                <Property name="text" type="java.lang.String" value="insFR"/>
                               </Properties>
                             </Component>
                           </SubComponents>
